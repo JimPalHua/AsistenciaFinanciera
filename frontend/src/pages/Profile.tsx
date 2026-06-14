@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { API_URL } from '../config';
-import { Camera, Save, LogOut } from 'lucide-react';
 
 const Profile: React.FC = () => {
   const { user, login } = useAuth();

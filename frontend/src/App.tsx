@@ -8,8 +8,9 @@ import ChatDashboard from './pages/ChatDashboard';
 import Profile from './pages/Profile';
 import AdminDashboard from './pages/AdminDashboard';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import React from 'react';
 
-const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
+const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { user } = useAuth();
   if (!user) {
     return <Navigate to="/login" replace />;

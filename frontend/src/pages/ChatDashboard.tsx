@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Send, User as UserIcon } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { API_URL } from '../config';
 import { io, Socket } from 'socket.io-client';
